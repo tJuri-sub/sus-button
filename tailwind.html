@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="w-screen h-dvh flex justify-center items-center gap-3 flex-col">
+    
+    <div class="animate-bounce flex flex-col justify-center items-center">
+        <h1 class="text-xl">click this</h1> 
+        <i class='bx bx-lg bxs-hand-down'></i>
+    </div>
+    <a class="bg-blue-400 text-white p-2 rounded-md font-bold hover:bg-blue-300 active:bg-blue-500 drop-shadow-lg" href="#" onclick="showtext()">sus button</a>
+    <p id="text" class="uppercase tracking-widest"></p>
+
+    <script>
+        function showtext() {
+            document.getElementById("text").innerHTML = "this is made by tailwindcss!";
+        }
+    </script>
+</body>
+</html>
